@@ -16,8 +16,24 @@ const int EHORIZ = 2;
 const int NJOUEURS = 3;
 
 
+typedef int Grille[NMAXLIGS][NMAXCOLS];
+typedef int GrilleVisite[NMAXLIGS][NMAXCOLS];
 
 
+/**
+ * Contient les coordonnes d'une position sur la grille
+ */
+struct position {
+    int x, y;
+};
+
+/**
+ * Contient les scores des joueurs
+ */
+struct Scores {
+    int nbJoueurs;
+    int t[NJOUEURS];
+};
 
 
 
